@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walker OS Hardware | Pi Hub and Device Mesh</title>
+    <meta
+      name="description"
+      content="Walker OS hardware plan for Raspberry Pi, desktops, laptops, servers, Pi clusters, NAS, routers, phones, tablets, IoT, Tailscale, and cloud services."
+    >
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Walker OS home">
+        <img class="brand-icon" src="./assets/wos-icon-core.svg" alt="" aria-hidden="true">
+        <span>Walker OS</span>
+      </a>
+      <nav class="nav-links" aria-label="Site pages">
+        <a href="./index.html">Home</a>
+        <a href="./system.html">System</a>
+        <a href="./download.html">Download</a>
+        <a href="./roadmap.html">Roadmap</a>
+        <a class="is-current" href="./hardware.html">Hardware</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+      <a class="header-action" href="./download.html#early-access">Early access</a>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section-band">
+        <div>
+          <p class="eyebrow">Pi hub and device mesh</p>
+          <h1>Start small. Connect carefully.</h1>
+          <p class="hero-text">
+            Walker OS should begin as a Raspberry Pi hub, then monitor desktops, laptops, servers,
+            storage, phones, tablets, IoT, Bluetooth devices, and future wearables through secure connections.
+          </p>
+          <div class="page-kicker">
+            <span class="pill amber">Raspberry Pi first</span>
+            <span class="pill">Tailscale mesh</span>
+            <span class="pill">Cloud backup</span>
+            <span class="pill">Device inventory</span>
+          </div>
+        </div>
+        <div class="diagram-card">
+          <img src="./assets/walker-os-stack.svg" alt="Walker OS stack diagram showing device, voice, mobility, AR, and app layers">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Supported targets</p>
+          <h2>Hardware support plan.</h2>
+        </div>
+        <div class="hardware-table" role="table" aria-label="Hardware support plan">
+          <div role="row" class="table-row table-head">
+            <span role="columnheader">Target</span>
+            <span role="columnheader">Role</span>
+            <span role="columnheader">Status</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Raspberry Pi Zero 2 W</span>
+            <span role="cell">Small always-on Walker hub</span>
+            <span role="cell">First image target from prior build plan</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Raspberry Pi 5</span>
+            <span role="cell">More capable voice, dashboard, and local services hub</span>
+            <span role="cell">Candidate primary builder kit</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Main desktop</span>
+            <span role="cell">Primary monitored workstation</span>
+            <span role="cell">Telemetry, files, service status, command access</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Laptop</span>
+            <span role="cell">Travel device</span>
+            <span role="cell">Offline cache, file access, remote wake later</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Server / homelab</span>
+            <span role="cell">Services, websites, storage, automation</span>
+            <span role="cell">Monitoring, logs, process control, backup</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Pi cluster node</span>
+            <span role="cell">Distributed builder or local compute node</span>
+            <span role="cell">Telemetry and degraded-state alerts</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-split">
+        <div class="section-heading compact">
+          <p class="eyebrow">Network layer</p>
+          <h2>Secure remote access without opening everything up.</h2>
+          <p>
+            The diagrams center on Tailscale and LAN access for a reason: Walker should reach machines securely,
+            keep plain-text passwords out of the path, and require confirmations for destructive actions.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">Tailscale</span>
+            <h3>Encrypted mesh</h3>
+            <p>Zero Trust mesh, device discovery, secure routing, and no open ports by default.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">SSH</span>
+            <h3>Key-based operations</h3>
+            <p>Remote commands should use keys, logs, per-device permissions, and explicit approval for risky work.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">LAN</span>
+            <h3>Local discovery</h3>
+            <p>Find local servers, storage, Bluetooth, IoT, and dashboard endpoints when the user allows it.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Inventory</span>
+            <h3>Device memory</h3>
+            <p>Track device names, roles, capabilities, last seen status, OS, IP, and trusted access methods.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Cloud and services</p>
+          <h2>Optional cloud where it actually helps.</h2>
+        </div>
+        <div class="three-column">
+          <article class="data-card">
+            <span class="meta">Nextcloud</span>
+            <h3>Self-hosted storage</h3>
+            <p>File storage, documents, photos, backups, contacts, notes, sharing, version history, and access from anywhere.</p>
+          </article>
+          <article class="data-card">
+            <span class="meta">External drives</span>
+            <h3>Cloud provider bridges</h3>
+            <p>Google Drive, OneDrive, Dropbox, AWS, DigitalOcean, or other API-backed storage when the user chooses.</p>
+          </article>
+          <article class="data-card">
+            <span class="meta">Monitoring</span>
+            <h3>Websites and services</h3>
+            <p>Uptime, SSL and security checks, response time, website change detection, resource usage, alerts, and logs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">First boot sequence</p>
+          <h2>Make setup feel guided, not fragile.</h2>
+          <p>
+            The first boot should tell the user what is happening, keep the system stable,
+            and avoid hidden setup steps that make a Pi feel dead when it is only waiting.
+          </p>
+        </div>
+        <div class="phase-grid">
+          <article class="phase-card">
+            <span class="meta">Boot</span>
+            <h3>Hardware and system setup</h3>
+            <ol class="numbered-list">
+              <li>Detect hardware and optimize RAM, ZRAM, and CPU settings</li>
+              <li>Configure networking, SSH, and optional Tailscale</li>
+              <li>Start Walker service, backup timer, and health checks</li>
+              <li>Show readiness through dashboard, logs, and status command</li>
+            </ol>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Walker</span>
+            <h3>Assistant setup</h3>
+            <ol class="numbered-list">
+              <li>Configure audio input, speaker output, and wake phrase</li>
+              <li>Initialize knowledge store and local databases</li>
+              <li>Connect optional Nextcloud or other storage provider</li>
+              <li>Register devices and start monitoring policies</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Other devices</p>
+          <h2>Future edge targets.</h2>
+        </div>
+        <div class="content-grid">
+          <article class="hud-card">
+            <strong>NAS</strong>
+            <h3>Storage and backups</h3>
+            <p>Index files, monitor storage health, back up data, and summarize local documents.</p>
+          </article>
+          <article class="hud-card">
+            <strong>Router</strong>
+            <h3>Network awareness</h3>
+            <p>Detect reachability, device presence, network activity, and suspicious changes.</p>
+          </article>
+          <article class="hud-card">
+            <strong>Phone / tablet</strong>
+            <h3>Companion control</h3>
+            <p>Future mobile dashboard, notifications, approvals, and voice/text interaction.</p>
+          </article>
+          <article class="hud-card">
+            <strong>Bluetooth / IoT</strong>
+            <h3>Local peripherals</h3>
+            <p>Audio devices, sensors, smart devices, and small automation surfaces.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Walker OS hardware plan</span>
+      <span>Pi first, broader device mesh later.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

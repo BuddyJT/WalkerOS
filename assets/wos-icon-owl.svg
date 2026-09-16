@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Walker OS Owl icon</title>
+  <desc id="desc">A compact original Walker OS app icon with a minimal intelligence owl mask.</desc>
+  <defs>
+    <linearGradient id="bg" x1="15" y1="10" x2="113" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#173c54"/>
+      <stop offset="0.5" stop-color="#081522"/>
+      <stop offset="1" stop-color="#010204"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="38" cy="25" r="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2cf5ff" stop-opacity="0.28"/>
+      <stop offset="0.42" stop-color="#0a1622" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#010204" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mask" x1="36" y1="35" x2="92" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24f4ff"/>
+      <stop offset="0.54" stop-color="#eafbff"/>
+      <stop offset="1" stop-color="#ff9d23"/>
+    </linearGradient>
+    <radialGradient id="field" cx="64" cy="61" r="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24f4ff" stop-opacity="0.18"/>
+      <stop offset="0.48" stop-color="#ffb24a" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#010204" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="lift" x="-24%" y="-24%" width="148%" height="148%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#24f4ff" flood-opacity="0.24"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="eyeGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-color="#ff9d23" flood-opacity="0.48"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="29" fill="url(#bg)"/>
+  <rect x="8" y="8" width="112" height="112" rx="29" fill="url(#shine)"/>
+  <circle cx="64" cy="64" r="43" fill="url(#field)"/>
+  <path d="M36 45C42 34 55 34 64 46C73 34 86 34 92 45V73C92 88 80 98 64 104C48 98 36 88 36 73Z" fill="#061019" stroke="url(#mask)" stroke-width="5.6" stroke-linejoin="round" filter="url(#lift)"/>
+  <path d="M45 53L58 66L45 78Z" fill="#071018" stroke="#24f4ff" stroke-width="4.7" stroke-linejoin="round"/>
+  <path d="M83 53L70 66L83 78Z" fill="#071018" stroke="#ffb24a" stroke-width="4.7" stroke-linejoin="round" filter="url(#eyeGlow)"/>
+  <path d="M64 69L57 82H71Z" fill="#ffb24a" filter="url(#eyeGlow)"/>
+  <path d="M55 42H73" stroke="#f8feff" stroke-width="3.8" stroke-linecap="round" opacity="0.66"/>
+  <rect x="15" y="15" width="98" height="98" rx="23" fill="none" stroke="#f8feff" stroke-opacity="0.08" stroke-width="2"/>
+  <rect x="8" y="8" width="112" height="112" rx="29" fill="none" stroke="#24f4ff" stroke-opacity="0.5" stroke-width="2"/>
+</svg>

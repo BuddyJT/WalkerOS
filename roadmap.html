@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walker OS Roadmap | Future Phases</title>
+    <meta
+      name="description"
+      content="Walker OS roadmap for core audio, device telemetry, remote commands, web information, cloud storage, finance, wearables, autonomous agents, collaboration, and mobile dashboards."
+    >
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Walker OS home">
+        <img class="brand-icon" src="./assets/wos-icon-core.svg" alt="" aria-hidden="true">
+        <span>Walker OS</span>
+      </a>
+      <nav class="nav-links" aria-label="Site pages">
+        <a href="./index.html">Home</a>
+        <a href="./system.html">System</a>
+        <a href="./download.html">Download</a>
+        <a class="is-current" href="./roadmap.html">Roadmap</a>
+        <a href="./hardware.html">Hardware</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+      <a class="header-action" href="./download.html#early-access">Early access</a>
+    </header>
+
+    <main id="main">
+      <section class="page-hero compact section-band">
+        <div>
+          <p class="eyebrow">Future phases</p>
+          <h1>Build the assistant in layers.</h1>
+          <p class="hero-text">
+            Walker OS should grow from a reliable Pi-based voice hub into a multi-device assistant,
+            not try to ship every ambitious feature before the foundation is stable.
+          </p>
+        </div>
+        <div class="page-panel">
+          <h3>Roadmap rule</h3>
+          <p>
+            Core, safety, and recovery come first. Hardware integrations, vehicle support, AR glasses,
+            and autonomous actions should arrive only after the base system is testable and reversible.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Phases 1-10</p>
+          <h2>The full Walker OS direction.</h2>
+        </div>
+        <div class="phase-grid">
+          <article class="phase-card">
+            <span class="meta">Phase 1 / core</span>
+            <h3>Core Walker + audio</h3>
+            <p>Wake word, voice input, speech-to-text, text-to-speech, on-screen text, local dashboard, and first-run setup.</p>
+            <span class="status-dot warn">In concept</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 2 / devices</span>
+            <h3>Device telemetry and file access</h3>
+            <p>CPU, RAM, disk, temp, uptime, status, logs, file browsing, search, read/write, and secure transfer.</p>
+            <span class="status-dot warn">Next priority</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 3 / action</span>
+            <h3>Remote commands and automation</h3>
+            <p>Run approved commands, manage services, schedule tasks, monitor processes, and report results through Tailscale or LAN.</p>
+            <span class="status-dot future">Planned</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 4 / web</span>
+            <h3>Information, news, and YouTube</h3>
+            <p>Web search, news, weather, YouTube transcripts, media summaries, research comparisons, and report generation.</p>
+            <span class="status-dot future">Planned</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 5 / cloud</span>
+            <h3>Storage integration</h3>
+            <p>Nextcloud, Google Drive, Dropbox, OneDrive, and S3-style providers for backup, sync, retrieval, and sharing.</p>
+            <span class="status-dot future">Planned</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 6 / finance</span>
+            <h3>Investments and finance info</h3>
+            <p>Stocks, crypto, investments, watchlists, research, and personal financial notes without turning Walker into a broker.</p>
+            <span class="status-dot future">Planned</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 7 / wearables</span>
+            <h3>AR glasses integration</h3>
+            <p>Captions, status cards, notifications, task guidance, audio feedback, haptics, and permissioned camera-aware assistance.</p>
+            <span class="status-dot future">Experimental</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 8 / autonomy</span>
+            <h3>Advanced autonomous agent</h3>
+            <p>Walker plans multi-step work, confirms risky steps, executes approved actions, validates results, and rolls back when needed.</p>
+            <span class="status-dot future">Experimental</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 9 / collaboration</span>
+            <h3>Multi-agent collaboration</h3>
+            <p>Specialized agents for research, code, security, files, monitoring, reminders, and reporting with shared memory boundaries.</p>
+            <span class="status-dot future">Experimental</span>
+          </article>
+          <article class="phase-card">
+            <span class="meta">Phase 10 / companion</span>
+            <h3>Mobile app and dashboard</h3>
+            <p>Remote control, notifications, device inventory, task review, approvals, file access, and visual dashboards from a phone.</p>
+            <span class="status-dot future">Future</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section roadmap-section">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive roadmap</p>
+          <h2>Major capability tracks.</h2>
+          <p>
+            These tabs keep the biggest ideas grouped so buyers and builders can understand what is real first and what comes later.
+          </p>
+        </div>
+        <div class="roadmap-tabs" aria-label="Roadmap categories">
+          <button class="tab-button is-active" type="button" data-tab="voice">Voice</button>
+          <button class="tab-button" type="button" data-tab="cars">Cars</button>
+          <button class="tab-button" type="button" data-tab="ar">AR glasses</button>
+          <button class="tab-button" type="button" data-tab="home">Devices</button>
+          <button class="tab-button" type="button" data-tab="dev">Developers</button>
+        </div>
+        <div class="roadmap-panel" id="roadmapPanel" tabindex="-1">
+          <div class="roadmap-copy">
+            <span id="roadmapStage">Phase 1</span>
+            <h3 id="roadmapTitle">Voice that works hands-free.</h3>
+            <p id="roadmapText">
+              Walker OS should listen through speech-to-text, respond through text-to-speech,
+              support typed fallback input, and expose a privacy mode that keeps sensitive commands local.
+            </p>
+          </div>
+          <ul class="roadmap-list" id="roadmapList">
+            <li>Wake phrase and push-to-talk modes</li>
+            <li>Local transcript history with delete controls</li>
+            <li>Voice profiles for different speakers and environments</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Vehicle direction</p>
+          <h2>Cars should start as read-only context.</h2>
+          <p>
+            Walker may eventually connect to vehicles through OBD-II or companion apps, but the safe first path is monitoring,
+            maintenance reminders, route context, and voice prompts. Steering, braking, throttle, or safety-critical control
+            should stay out of scope unless there is a real compliance plan.
+          </p>
+        </div>
+        <div class="three-column">
+          <article class="data-card">
+            <span class="meta">Good first step</span>
+            <h3>Telemetry</h3>
+            <p>Battery, maintenance, engine codes, trip context, location-aware reminders, and driver-safe summaries.</p>
+          </article>
+          <article class="data-card">
+            <span class="meta">Useful interface</span>
+            <h3>Voice prompts</h3>
+            <p>Short spoken alerts, no distracting screens, manual mute, and clear disable controls.</p>
+          </article>
+          <article class="data-card">
+            <span class="meta">Boundary</span>
+            <h3>No vehicle control first</h3>
+            <p>Keep Walker advisory until safety, liability, legal, and hardware requirements are fully understood.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Walker OS roadmap</span>
+      <span>Ambitious future, staged carefully.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

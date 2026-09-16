@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download Walker OS | Image and Release Plan</title>
+    <meta
+      name="description"
+      content="Walker OS download plan for an open-source-friendly Raspberry Pi image with build scripts, checksums, release checklist, and optional paid convenience bundles."
+    >
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Walker OS home">
+        <img class="brand-icon" src="./assets/wos-icon-core.svg" alt="" aria-hidden="true">
+        <span>Walker OS</span>
+      </a>
+      <nav class="nav-links" aria-label="Site pages">
+        <a href="./index.html">Home</a>
+        <a href="./system.html">System</a>
+        <a class="is-current" href="./download.html">Download</a>
+        <a href="./roadmap.html">Roadmap</a>
+        <a href="./hardware.html">Hardware</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+      <a class="header-action" href="#early-access">Early access</a>
+    </header>
+
+    <main id="main">
+      <section class="page-hero compact section-band">
+        <div>
+          <p class="eyebrow">Digital product draft</p>
+          <h1>Downloadable image, open build path.</h1>
+          <p class="hero-text">
+            Walker OS can be sold as a convenient signed image while keeping the builder repo,
+            scripts, layer files, and release checklist open for people who want to inspect or build it themselves.
+          </p>
+        </div>
+        <div class="page-panel">
+          <h3>Launch status</h3>
+          <p>
+            Draft only. Checkout, signed builds, license delivery, and support channels still need to be wired before launch.
+          </p>
+          <div class="page-kicker">
+            <span class="status-dot warn">Concept pricing</span>
+            <span class="status-dot future">Build scripts planned</span>
+            <span class="status-dot">Open docs</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Product packages</p>
+          <h2>Sell convenience, support, and early access.</h2>
+          <p>
+            The open-source-friendly path stays visible: people can review the build recipe.
+            Paid tiers can focus on signed downloads, guided setup, updates, and founder access.
+          </p>
+        </div>
+        <div class="product-layout">
+          <article class="product-card featured">
+            <div class="product-topline">
+              <span>Early Builder Image</span>
+              <strong>$39</strong>
+            </div>
+            <h3>Walker OS for Raspberry Pi</h3>
+            <p>
+              A flashable image with Walker preconfigured, intended for early testers using Raspberry Pi hardware.
+            </p>
+            <ul class="check-list">
+              <li>Signed <code>.img</code> download when production-ready</li>
+              <li>SHA-256 checksum and release checklist</li>
+              <li>First boot setup for network, audio, SSH, and dashboard</li>
+              <li>Open build recipe for transparency</li>
+            </ul>
+            <button class="button button-primary js-checkout" type="button">Mock checkout</button>
+          </article>
+          <article class="product-card">
+            <div class="product-topline">
+              <span>Founder Kit</span>
+              <strong>$99</strong>
+            </div>
+            <h3>Profiles, roadmap access, and support</h3>
+            <p>
+              A higher tier for early adopters who want device profiles, beta modules, and closer feedback access.
+            </p>
+            <ul class="check-list">
+              <li>Pi Zero 2 W, Pi 5, mini PC, and laptop profiles</li>
+              <li>Experimental AR, car telemetry, cloud, and dashboard modules</li>
+              <li>Private changelog and setup notes</li>
+              <li>Founder feedback and feature voting</li>
+            </ul>
+            <button class="button button-secondary js-checkout" type="button">Reserve founder kit</button>
+          </article>
+        </div>
+        <p class="notice" role="status" id="checkoutStatus">
+          Draft only: connect checkout to Stripe, Gumroad, Lemon Squeezy, or GitHub Releases when the product is ready.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Image choices</p>
+          <h2>Offer Lite and Full downloads when builds are ready.</h2>
+          <p>
+            Both images should use the same Walker OS identity and setup flow. The difference is where data and
+            heavier work live after first boot.
+          </p>
+        </div>
+        <div class="product-layout">
+          <article class="product-card">
+            <div class="product-topline">
+              <span>Walker OS Lite</span>
+              <strong>Cloud-ready</strong>
+            </div>
+            <h3>Small image for Raspberry Pi hardware</h3>
+            <p>
+              Designed to avoid bottlenecks on low-RAM devices by using Nextcloud, Google Drive, iCloud, Dropbox,
+              or business cloud storage for large files, backups, transcripts, and indexes.
+            </p>
+            <ul class="check-list">
+              <li>Minimal local service footprint</li>
+              <li>Cloud or personal-cloud storage wizard</li>
+              <li>Safe defaults for limited RAM and disk</li>
+              <li>Queue heavy work instead of locking up the device</li>
+            </ul>
+          </article>
+          <article class="product-card featured">
+            <div class="product-topline">
+              <span>Walker OS Full</span>
+              <strong>Local-first</strong>
+            </div>
+            <h3>Full image for stronger hardware</h3>
+            <p>
+              Runs the Lite workflow as an option, but defaults to storing memory, documents, indexes, backups,
+              and automation state on local hardware.
+            </p>
+            <ul class="check-list">
+              <li>Local knowledge and file indexes</li>
+              <li>On-device backups and rollback targets</li>
+              <li>Heavier automation workers and monitoring</li>
+              <li>Optional cloud sync, not required cloud storage</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split">
+        <div class="section-heading compact">
+          <p class="eyebrow">Image build plan</p>
+          <h2>What the repo should generate.</h2>
+          <p>
+            The previous Walker Pi task established the build shape: a small upload-ready repo,
+            not a giant committed disk image.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">Build tool</span>
+            <h3><code>rpi-image-gen</code></h3>
+            <p>Use Raspberry Pi image generation from a Linux runtime, likely through Docker, OrbStack, or WSL2 for Windows later.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Image target</span>
+            <h3><code>walker-zero2w.img</code></h3>
+            <p>Start with Raspberry Pi Zero 2 W, then add Pi 5 and broader Linux targets as real testing grows.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Base layers</span>
+            <h3><code>rpizero2w</code>, <code>image-rpios</code>, <code>trixie-minbase</code></h3>
+            <p>Keep the first system compact and focused before adding heavier desktop or AI workloads.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Walker layer</span>
+            <h3><code>walker-base</code></h3>
+            <p>Install service directories, logs, SQLite memory, backup timer, status command, and placeholder app launcher.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Release checklist</p>
+          <h2>Do not ship mystery images.</h2>
+          <p>
+            Every public release should prove the image builds, flashes, boots, exposes secure access,
+            starts Walker, writes logs, and can be restored.
+          </p>
+        </div>
+        <div class="comparison-table" aria-label="Release readiness checklist">
+          <div class="comparison-row header">
+            <span>Check</span>
+            <span>What to verify</span>
+            <span>Why it matters</span>
+          </div>
+          <div class="comparison-row">
+            <span>Source</span>
+            <span>Shell scripts parse, YAML loads, workflow checks pass</span>
+            <span>Prevents simple packaging errors</span>
+          </div>
+          <div class="comparison-row">
+            <span>Build</span>
+            <span>Image exists, partition table is valid, checksum is recorded</span>
+            <span>Buyers can verify downloads</span>
+          </div>
+          <div class="comparison-row">
+            <span>Hardware</span>
+            <span>Pi boots, network appears, SSH works, Walker service is active</span>
+            <span>Marks a build as physically tested</span>
+          </div>
+          <div class="comparison-row">
+            <span>Release</span>
+            <span>Upload image as a release asset, not a normal repo file</span>
+            <span>Keeps GitHub clean and manageable</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Platform support</p>
+          <h2>Mac/Linux first. Windows as a clear next step.</h2>
+        </div>
+        <div class="three-column">
+          <article class="data-card">
+            <span class="meta">macOS</span>
+            <h3>Builder and flash scripts</h3>
+            <p>Use Docker or OrbStack for the Linux build environment, then flash with a guarded macOS disk script.</p>
+          </article>
+          <article class="data-card">
+            <span class="meta">Linux</span>
+            <h3>Native build target</h3>
+            <p>Best environment for <code>rpi-image-gen</code>, package checks, image verification, and release automation.</p>
+          </article>
+          <article class="data-card">
+            <span class="meta">Windows future</span>
+            <h3>WSL2 and PowerShell helpers</h3>
+            <p>Add WSL2 plus Docker Desktop flow, PowerShell verification scripts, and Raspberry Pi Imager instructions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="early-access" class="section signup-section">
+        <div class="signup-panel">
+          <div>
+            <p class="eyebrow">Early access</p>
+            <h2>Get notified when downloads are real.</h2>
+            <p>
+              The current buttons are mockups. This form is ready to connect to a real mailing list or founder checkout later.
+            </p>
+          </div>
+          <form class="signup-form" id="signupForm">
+            <label for="email">Email</label>
+            <div class="form-row">
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              <button class="button button-primary" type="submit">Request access</button>
+            </div>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Walker OS download plan</span>
+      <span>Draft product packaging for an open-source-friendly OS image.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

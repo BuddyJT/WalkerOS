@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walker OS System | Control Center Blueprint</title>
+    <meta
+      name="description"
+      content="Explore the Walker OS system blueprint: voice input, AI engine, secure tool bus, local tools, device telemetry, cloud services, knowledge store, backups, and security."
+    >
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Walker OS home">
+        <img class="brand-icon" src="./assets/wos-icon-core.svg" alt="" aria-hidden="true">
+        <span>Walker OS</span>
+      </a>
+      <nav class="nav-links" aria-label="Site pages">
+        <a href="./index.html">Home</a>
+        <a class="is-current" href="./system.html">System</a>
+        <a href="./download.html">Download</a>
+        <a href="./roadmap.html">Roadmap</a>
+        <a href="./hardware.html">Hardware</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+      <a class="header-action" href="./download.html#early-access">Early access</a>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section-band">
+        <div>
+          <p class="eyebrow">Complete system overview</p>
+          <h1>Walker OS as the hub.</h1>
+          <p class="hero-text">
+            The product vision is a Raspberry Pi control center that accepts natural voice or text,
+            routes requests through an authenticated tool bus, manages devices and files, and keeps memory under user control.
+          </p>
+          <div class="page-kicker">
+            <span class="pill amber">Voice-first</span>
+            <span class="pill">Autonomous agent</span>
+            <span class="pill">Local memory</span>
+            <span class="pill">Secure tool bus</span>
+          </div>
+        </div>
+        <div class="blueprint-shell" aria-label="Walker OS system map">
+          <div class="blueprint-header">
+            <span>Walker OS Core</span>
+            <span>Pi Hub + Control Center</span>
+          </div>
+          <div class="blueprint-body">
+            <div class="blueprint-node">
+              <h3>Input interface</h3>
+              <p>Wake word, continuous listening, natural conversation, terminal, web UI, uploads, and future glasses input.</p>
+            </div>
+            <div class="blueprint-node">
+              <h3>AI engine</h3>
+              <p>Understands, plans, reasons, researches, analyzes, summarizes, codes, and chooses tools.</p>
+            </div>
+            <div class="blueprint-node">
+              <h3>Execution layer</h3>
+              <p>Task runner, process manager, script executor, code manager, file manager, and system editor.</p>
+            </div>
+            <div class="blueprint-node">
+              <h3>Response layer</h3>
+              <p>Spoken reply, on-screen text, dashboards, alerts, files, action confirmations, and summaries.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Walker capability API</p>
+          <h2>General capabilities, not hard-coded commands.</h2>
+          <p>
+            Walker should decide how to use tools safely. The API layer keeps actions grouped, logged,
+            authenticated, and understandable instead of exposing random shell power directly.
+          </p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card">
+            <span class="meta">System</span>
+            <h3>Inspect, execute, and repair</h3>
+            <ul class="signal-list">
+              <li>System inspect, execute, modify, and control</li>
+              <li>Process, service, resource, and log monitoring</li>
+              <li>Safe automation with confirmation before risky changes</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <span class="meta">Files and storage</span>
+            <h3>Search, read, summarize, sync</h3>
+            <ul class="signal-list">
+              <li>File search, read, write, move, delete, and backup</li>
+              <li>Document search, OCR, indexing, and summaries</li>
+              <li>Cloud storage bridges for Nextcloud, Drive, Dropbox, and S3-style services</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <span class="meta">Network and remote</span>
+            <h3>Reach devices securely</h3>
+            <ul class="signal-list">
+              <li>Network discovery, connect, ping, DNS, and SSH execution</li>
+              <li>Tailscale encrypted connections and no open ports by default</li>
+              <li>Remote files, remote commands, device inspection, and telemetry</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <span class="meta">Web and online</span>
+            <h3>Research and monitor</h3>
+            <ul class="signal-list">
+              <li>Web search, fetch, scrape, weather, news, YouTube summaries, and API requests</li>
+              <li>Website uptime, SSL, resource usage, and change monitoring</li>
+              <li>Research, comparisons, reports, and public data collection</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <span class="meta">Communication</span>
+            <h3>Alerts and messaging</h3>
+            <ul class="signal-list">
+              <li>Email read and send, SMS future, alerts, and notifications</li>
+              <li>Proactive reminders, schedule notices, and action confirmations</li>
+              <li>On-screen, voice, push, email, and log-file notification channels</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <span class="meta">Media and voice</span>
+            <h3>Listen and respond</h3>
+            <ul class="signal-list">
+              <li>Audio play, record, transcribe, text-to-speech, wake phrase, and voice listening</li>
+              <li>ElevenLabs-style voice output, Bluetooth audio, and HDMI fallback</li>
+              <li>Future AR glasses captions, haptic feedback, and visual prompts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Runtime profiles</p>
+          <h2>Lite and Full should share the same core, but store data differently.</h2>
+          <p>
+            Walker OS should not force every device to carry the same workload. The edition profile should decide
+            where memory, files, indexes, backups, and heavy processing live.
+          </p>
+        </div>
+        <div class="two-column">
+          <article class="data-card">
+            <span class="meta">Lite profile</span>
+            <h3>Prevent bottlenecks on constrained hardware</h3>
+            <ul class="plain-list">
+              <li>Keep local services small: dashboard, command router, auth, logs, and device telemetry</li>
+              <li>Use cloud or personal cloud storage for documents, backups, transcripts, and large memory indexes</li>
+              <li>Prefer queued tasks and remote processing when RAM, CPU, or disk pressure gets high</li>
+              <li>Target Raspberry Pi Zero 2 W, Pi 4, small thin clients, and travel hardware</li>
+            </ul>
+          </article>
+          <article class="data-card">
+            <span class="meta">Full profile</span>
+            <h3>Run local-first when the hardware can handle it</h3>
+            <ul class="plain-list">
+              <li>Store memory, documents, indexes, backups, and dashboards on local disks by default</li>
+              <li>Offer Lite-style cloud sync as an optional mirror, not a requirement</li>
+              <li>Run heavier search, OCR, telemetry, local services, and automation workers on-device</li>
+              <li>Target Pi 5, mini PCs, desktops, servers, NAS boxes, and homelab nodes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split">
+        <div class="section-heading compact">
+          <p class="eyebrow">Local tools on the Pi</p>
+          <h2>The first image should be useful even before the future arrives.</h2>
+          <p>
+            The base build should include the boring but essential pieces: telemetry, logs, backups,
+            voice processing hooks, local file storage, service control, and a local dashboard.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">Runtime</span>
+            <h3>System service and watchdog</h3>
+            <p><code>walker.service</code>, health checks, restart behavior, service logs, and <code>walker-status</code> for quick inspection.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Memory</span>
+            <h3>Local knowledge store</h3>
+            <p>Facts, people, projects, devices, notes, preferences, decisions, calendars, history, and custom user data.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Automation</span>
+            <h3>Tasks and scripts</h3>
+            <p>Task scheduling, safe scripts, code runner, process manager, system editor, and result formatter.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Protection</span>
+            <h3>Backups and rollback</h3>
+            <p>Automatic local backups, version history, configuration snapshots, cloud backups, and one-click rollback later.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Knowledge store</p>
+          <h2>Memory should be inspectable, editable, and yours.</h2>
+          <p>
+            Walker OS should remember enough to be useful without hiding what it knows. Each entry needs a source,
+            timestamp, confidence, category, update history, and whether the user provided it.
+          </p>
+        </div>
+        <div class="two-column">
+          <article class="data-card">
+            <span class="meta">Stored knowledge</span>
+            <h3>What Walker remembers</h3>
+            <ul class="plain-list">
+              <li>Facts and information</li>
+              <li>People, places, projects, tasks, notes, and documents</li>
+              <li>Devices, cloud accounts, services, settings, and preferences</li>
+              <li>Investments, financial notes, calendars, events, and important decisions</li>
+            </ul>
+          </article>
+          <article class="data-card">
+            <span class="meta">Entry metadata</span>
+            <h3>What every memory contains</h3>
+            <ul class="plain-list">
+              <li>What it is, value, source, when learned, and last updated</li>
+              <li>Confidence, category, linked records, and relations</li>
+              <li>User-provided flag and visible edit/delete controls</li>
+              <li>Clear separation between local memory and optional cloud calls</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section safety-section">
+        <div class="safety-copy">
+          <p class="eyebrow">Security and privacy</p>
+          <h2>Always on, always visible.</h2>
+          <p>
+            Walker OS should protect the user before it shows off. Security is not a later feature;
+            it is part of the first serious version.
+          </p>
+        </div>
+        <div class="safety-grid">
+          <article>
+            <h3>Authentication</h3>
+            <p>SSH key-based access, encrypted tunnels, no plain-text passwords, and granular permissions per device.</p>
+          </article>
+          <article>
+            <h3>Monitoring</h3>
+            <p>Threat detection, malware and ransomware scanning, file integrity, login monitoring, process behavior, and audit logs.</p>
+          </article>
+          <article>
+            <h3>Control</h3>
+            <p>Confirm destructive actions, fail safe rather than fail open, keep data under user control, and make shutdown obvious.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Mission</p>
+          <h2>Be the intelligent assistant that protects your systems.</h2>
+        </div>
+        <div class="workflow-strip" aria-label="Walker mission">
+          <div class="workflow-step"><span>Assistant</span><p>Be your intelligent command partner.</p></div>
+          <div class="workflow-step"><span>Protect</span><p>Watch systems, access, files, and risky behavior.</p></div>
+          <div class="workflow-step"><span>Remember</span><p>Keep what matters in a visible local memory store.</p></div>
+          <div class="workflow-step"><span>Automate</span><p>Handle repeat work with approvals and reports.</p></div>
+          <div class="workflow-step"><span>Alert</span><p>Notify you when something important changes.</p></div>
+          <div class="workflow-step"><span>Improve</span><p>Stay updateable, testable, and self-maintaining.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Walker OS system blueprint</span>
+      <span>Built from the user-supplied diagrams and prior Walker Pi planning task.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

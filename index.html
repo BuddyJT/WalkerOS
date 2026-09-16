@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walker OS | Open AI Control Center for Raspberry Pi</title>
+    <meta
+      name="description"
+      content="Walker OS is a draft open-source-friendly Raspberry Pi hub and downloadable OS image for voice, device telemetry, file access, cloud backup, and local-first automation."
+    >
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Walker OS home">
+        <img class="brand-icon" src="./assets/wos-icon-core.svg" alt="" aria-hidden="true">
+        <span>Walker OS</span>
+      </a>
+      <nav class="nav-links" aria-label="Site pages">
+        <a class="is-current" href="./index.html">Home</a>
+        <a href="./system.html">System</a>
+        <a href="./download.html">Download</a>
+        <a href="./roadmap.html">Roadmap</a>
+        <a href="./hardware.html">Hardware</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+      <a class="header-action" href="./download.html#early-access">Early access</a>
+    </header>
+
+    <main id="main">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Raspberry Pi hub / open assistant OS</p>
+          <h1>Walker OS</h1>
+          <p class="hero-text">
+            A corporate-grade, builder-friendly operating system concept for running Walker as your private
+            command center: voice input, device telemetry, file access, cloud backup, and safe automation from a Raspberry Pi.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="./system.html">Explore the system</a>
+            <a class="button button-secondary" href="./download.html">View image plan</a>
+          </div>
+          <div class="page-kicker" aria-label="Project principles">
+            <span class="pill amber">Open-source core</span>
+            <span class="pill">Local control</span>
+            <span class="pill">Voice-first UI</span>
+            <span class="pill">Secure remote access</span>
+          </div>
+        </div>
+
+        <div class="console" aria-label="Walker OS command center preview">
+          <div class="console-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>walker@control-center</strong>
+          </div>
+          <div class="console-grid">
+            <div class="status-panel status-live">
+              <span class="status-label">Core</span>
+              <strong>Understands. Plans. Executes. Remembers.</strong>
+              <p>Walker interprets natural language, decides which tools to use, takes action, and records context locally.</p>
+            </div>
+            <div class="status-panel">
+              <span class="status-label">Devices</span>
+              <strong>Tailscale / LAN mesh</strong>
+              <p>Desktop, laptop, server, Pi cluster, NAS, router, phone, tablet, and IoT monitoring through secure links.</p>
+            </div>
+            <div class="status-panel">
+              <span class="status-label">Input</span>
+              <strong>Voice, text, terminal, and future glasses</strong>
+              <p>Wake word, typed commands, web UI, CLI, mobile, and AR feedback are planned as interface layers.</p>
+            </div>
+            <div class="terminal-panel">
+              <code>$ walker ask "what devices are online?"</code>
+              <code>desktop: online | server: online | laptop: offline | pi cluster: degraded</code>
+              <code>$ walker save project_report.pdf --to nextcloud</code>
+              <code>confirm? key-auth enabled / transfer encrypted / backup logged</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">What it becomes</p>
+          <h2>An open control layer for your personal systems.</h2>
+          <p>
+            Walker OS should feel simple for a nontechnical user, transparent enough for builders,
+            and serious enough to trust with machines, files, alerts, backups, and daily workflows.
+          </p>
+        </div>
+        <div class="content-grid">
+          <article class="hud-card">
+            <strong>01</strong>
+            <h3>Voice and text interface</h3>
+            <p>Say or type natural requests, upload documents, paste files, ask for reports, and get spoken or on-screen answers.</p>
+          </article>
+          <article class="hud-card">
+            <strong>02</strong>
+            <h3>Device command center</h3>
+            <p>Monitor CPU, RAM, disk, temperature, uptime, services, logs, processes, alerts, and online status across your devices.</p>
+          </article>
+          <article class="hud-card">
+            <strong>03</strong>
+            <h3>Secure file and cloud layer</h3>
+            <p>Read, search, summarize, move, back up, and sync files through local storage, Nextcloud, Drive, Dropbox, or S3-style services.</p>
+          </article>
+          <article class="hud-card">
+            <strong>04</strong>
+            <h3>Autonomous agent roadmap</h3>
+            <p>Let Walker plan tasks, confirm risky steps, execute approved actions, report results, and remember what matters.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Editions</p>
+          <h2>Walker OS Lite for small hardware. Walker OS Full for local power.</h2>
+          <p>
+            The same assistant can ship in two profiles: a cloud-assisted Lite image for Raspberry Pi-class devices,
+            and a Full image for hardware that can keep memory, files, indexing, and heavier services on-device.
+          </p>
+        </div>
+        <div class="two-column">
+          <article class="data-card">
+            <span class="meta">Walker OS Lite</span>
+            <h3>Cloud-assisted, low-footprint image</h3>
+            <p>
+              Built for limited RAM and storage. Lite keeps the local dashboard, wake/input layer, secure tunnels,
+              device control, and basic memory locally, then offloads bulk files, backups, transcripts, and indexes
+              to a chosen cloud such as Nextcloud, Google Drive, iCloud, Dropbox, or business storage.
+            </p>
+          </article>
+          <article class="data-card">
+            <span class="meta">Walker OS Full</span>
+            <h3>Local-first image with cloud as an option</h3>
+            <p>
+              Built for Pi 5, mini PCs, desktops, servers, and homelabs. Full can do everything Lite does,
+              but keeps larger memory stores, files, search indexes, automations, and backups on local hardware
+              unless the user chooses cloud sync.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split">
+        <div class="section-heading compact">
+          <p class="eyebrow">Open source, corporate polish</p>
+          <h2>Professional outside. Hackable inside.</h2>
+          <p>
+            The public story can be clean and trustworthy while the project stays open to builders,
+            contributors, homelab users, and Raspberry Pi experimenters.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">Open core</span>
+            <h3>Source-visible foundation</h3>
+            <p>Publish the site, build scripts, image layer, service files, and docs so people can inspect how Walker OS works.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">User friendly</span>
+            <h3>Guided setup and dashboard</h3>
+            <p>First boot should walk users through network, audio, SSH, backups, cloud storage, and privacy choices.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Secure by design</span>
+            <h3>Permissioned automation</h3>
+            <p>Key-based auth, encrypted tunnels, no plain-text passwords, visible logs, and confirmation before destructive actions.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">Release ready</span>
+            <h3>Signed downloads later</h3>
+            <p>Ship image files through GitHub Releases or a paid delivery provider with checksums, changelogs, and recovery docs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="source-callout">
+          <div>
+            <p class="eyebrow">Current build direction</p>
+            <h2>Start with the Raspberry Pi image.</h2>
+            <p>
+              The prior Walker Pi plan uses <code>rpi-image-gen</code> with a custom <code>walker-base</code> layer,
+              a <code>walker.service</code>, a backup timer, SSH key-only access, logs, SQLite memory storage,
+              and a release checklist before any image is uploaded.
+            </p>
+            <a class="button button-primary" href="./download.html">See the image packaging plan</a>
+          </div>
+          <div class="comparison-table" aria-label="First image plan">
+            <div class="comparison-row header">
+              <span>Layer</span>
+              <span>Planned value</span>
+              <span>Purpose</span>
+            </div>
+            <div class="comparison-row">
+              <span>Device</span>
+              <span>Raspberry Pi Zero 2 W / Pi 5 candidate</span>
+              <span>Affordable builder hardware</span>
+            </div>
+            <div class="comparison-row">
+              <span>Base</span>
+              <span>Raspberry Pi OS, Trixie minbase</span>
+              <span>Small Linux foundation</span>
+            </div>
+            <div class="comparison-row">
+              <span>Walker layer</span>
+              <span>Service, memory, logs, backups</span>
+              <span>Preconfigured assistant runtime</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Natural workflows</p>
+          <h2>People should ask. Walker should handle the boring path.</h2>
+        </div>
+        <div class="workflow-strip" aria-label="Example Walker workflows">
+          <div class="workflow-step">
+            <span>Ask</span>
+            <p>“What devices are online?”</p>
+          </div>
+          <div class="workflow-step">
+            <span>Understand</span>
+            <p>Walker checks device inventory and recent telemetry.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Plan</span>
+            <p>It chooses the safe API path, not a risky shell command first.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Execute</span>
+            <p>It queries Tailscale, LAN, logs, or service health as needed.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Respond</span>
+            <p>It speaks, displays, or notifies with a useful summary.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Remember</span>
+            <p>It stores context, preferences, and important events locally.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="early-access" class="section signup-section">
+        <div class="signup-panel">
+          <div>
+            <p class="eyebrow">Early access</p>
+            <h2>Track the first Walker OS build.</h2>
+            <p>
+              This is still a draft site. The form is a placeholder for a mailing list or founder program once the
+              downloadable image, checksums, and setup docs are ready.
+            </p>
+          </div>
+          <form class="signup-form" id="signupForm">
+            <label for="email">Email</label>
+            <div class="form-row">
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              <button class="button button-primary" type="submit">Request access</button>
+            </div>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Walker OS draft site</span>
+      <span>Open-source-friendly concept for review, not production checkout.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

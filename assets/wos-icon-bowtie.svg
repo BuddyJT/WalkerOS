@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Walker OS Bowtie icon</title>
+  <desc id="desc">A compact original Walker OS app icon with a refined British-agent bowtie command mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="14" y1="10" x2="114" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#173c54"/>
+      <stop offset="0.5" stop-color="#081522"/>
+      <stop offset="1" stop-color="#010204"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="38" cy="25" r="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2cf5ff" stop-opacity="0.28"/>
+      <stop offset="0.42" stop-color="#0a1622" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#010204" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tie" x1="25" y1="43" x2="103" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24f4ff"/>
+      <stop offset="0.5" stop-color="#eafbff"/>
+      <stop offset="1" stop-color="#ff9d23"/>
+    </linearGradient>
+    <radialGradient id="field" cx="64" cy="64" r="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb24a" stop-opacity="0.32"/>
+      <stop offset="0.48" stop-color="#24f4ff" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#010204" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-24%" y="-24%" width="148%" height="148%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#24f4ff" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="29" fill="url(#bg)"/>
+  <rect x="8" y="8" width="112" height="112" rx="29" fill="url(#shine)"/>
+  <circle cx="64" cy="64" r="43" fill="url(#field)"/>
+  <path d="M25 44C38 48 49 55 60 64C49 73 38 80 25 84C29 67 29 61 25 44Z" fill="#061019" stroke="#24f4ff" stroke-width="5.6" stroke-linejoin="round" filter="url(#softGlow)"/>
+  <path d="M103 44C90 48 79 55 68 64C79 73 90 80 103 84C99 67 99 61 103 44Z" fill="#110802" stroke="#ffb24a" stroke-width="5.6" stroke-linejoin="round" filter="url(#softGlow)"/>
+  <path d="M56 51H72L79 64L72 77H56L49 64Z" fill="url(#tie)" stroke="#f8feff" stroke-opacity="0.7" stroke-width="2"/>
+  <circle cx="64" cy="64" r="5" fill="#071018"/>
+  <rect x="15" y="15" width="98" height="98" rx="23" fill="none" stroke="#f8feff" stroke-opacity="0.08" stroke-width="2"/>
+  <rect x="8" y="8" width="112" height="112" rx="29" fill="none" stroke="#24f4ff" stroke-opacity="0.5" stroke-width="2"/>
+</svg>

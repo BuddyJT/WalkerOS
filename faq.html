@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walker OS FAQ | Open Source, Security, Downloads</title>
+    <meta
+      name="description"
+      content="Walker OS FAQ covering project status, open source plans, downloads, privacy, device access, cars, AR glasses, and future paid products."
+    >
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Walker OS home">
+        <img class="brand-icon" src="./assets/wos-icon-core.svg" alt="" aria-hidden="true">
+        <span>Walker OS</span>
+      </a>
+      <nav class="nav-links" aria-label="Site pages">
+        <a href="./index.html">Home</a>
+        <a href="./system.html">System</a>
+        <a href="./download.html">Download</a>
+        <a href="./roadmap.html">Roadmap</a>
+        <a href="./hardware.html">Hardware</a>
+        <a class="is-current" href="./faq.html">FAQ</a>
+      </nav>
+      <a class="header-action" href="./download.html#early-access">Early access</a>
+    </header>
+
+    <main id="main">
+      <section class="page-hero compact section-band">
+        <div>
+          <p class="eyebrow">Questions and boundaries</p>
+          <h1>Clear answers before launch.</h1>
+          <p class="hero-text">
+            Walker OS is a product concept and website draft right now. This FAQ keeps the public story honest,
+            open-source friendly, and user-safe while the real image and software mature.
+          </p>
+        </div>
+        <div class="page-panel">
+          <h3>Positioning</h3>
+          <p>
+            Walker OS should be presented as a downloadable Raspberry Pi control-center image in development,
+            not as a finished autonomous operating system.
+          </p>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>For early buyers, builders, and contributors.</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Is Walker OS a finished operating system?</summary>
+            <p>No. This site is a polished draft for the product direction. The first real milestone is a verified Raspberry Pi image with Walker preconfigured, build docs, and a release checklist.</p>
+          </details>
+          <details>
+            <summary>What will be open source?</summary>
+            <p>The goal is to make the core build recipe transparent: site repo, docs, scripts, image layer files, service setup, safety rules, and local dashboard code. Paid products can still package signed images, setup support, and convenience bundles.</p>
+          </details>
+          <details>
+            <summary>How would the download be delivered?</summary>
+            <p>A real launch could use GitHub Releases for open artifacts and a payment provider such as Stripe, Gumroad, or Lemon Squeezy for paid signed images, license keys, founder access, and support.</p>
+          </details>
+          <details>
+            <summary>Will Walker OS collect my data?</summary>
+            <p>The product should be designed local-first. Memory, transcripts, device inventory, logs, and files should stay under user control unless the user explicitly connects a cloud service or model provider.</p>
+          </details>
+          <details>
+            <summary>Can Walker run commands on my devices?</summary>
+            <p>That is on the plan, but it needs strong boundaries: key-based authentication, encrypted connections, per-device permissions, audit logs, and confirmations before destructive commands.</p>
+          </details>
+          <details>
+            <summary>Will it connect to cars?</summary>
+            <p>The safest first version should be read-only: OBD-II telemetry, maintenance reminders, battery health, route context, and driver-safe voice prompts. Vehicle control should stay out of scope without a serious safety and legal plan.</p>
+          </details>
+          <details>
+            <summary>Can it work with AR glasses?</summary>
+            <p>Yes, as a future integration. The planned use is captions, alerts, heads-up task cards, notifications, visual feedback, and permissioned camera-aware assistance for supported devices.</p>
+          </details>
+          <details>
+            <summary>What is the first hardware target?</summary>
+            <p>The prior build plan focused on a Raspberry Pi Zero 2 W image named <code>walker-zero2w.img</code>. Raspberry Pi 5 is a stronger candidate for richer voice, dashboard, and local services.</p>
+          </details>
+          <details>
+            <summary>Does it support Windows?</summary>
+            <p>Not yet. The prior image package did not include native Windows scripts. A future Windows path should use WSL2, Docker Desktop, PowerShell helpers, and Raspberry Pi Imager instructions.</p>
+          </details>
+          <details>
+            <summary>What makes it user friendly?</summary>
+            <p>Guided first boot, clear dashboards, spoken and on-screen responses, visible logs, simple backup/restore, safe defaults, and natural language requests instead of forcing people to memorize commands.</p>
+          </details>
+          <details>
+            <summary>What makes it corporate-level?</summary>
+            <p>Clear product pages, security posture, release checklist, support model, architecture documentation, professional visual design, transparent status labels, and no overclaiming unfinished capabilities.</p>
+          </details>
+          <details>
+            <summary>What should not ship in the first version?</summary>
+            <p>Unverified vehicle control, hidden surveillance behavior, destructive automation without confirmation, plain-text passwords, unclear cloud syncing, or a giant untested image without checksums and release notes.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Design principles</p>
+          <h2>The rules Walker OS should keep repeating.</h2>
+        </div>
+        <div class="content-grid">
+          <article class="hud-card"><strong>01</strong><h3>Online intelligence, local control</h3><p>Use cloud intelligence when helpful, but keep permissions, logs, and user data visible locally.</p></article>
+          <article class="hud-card"><strong>02</strong><h3>Capabilities, not commands</h3><p>Let Walker choose safe tool paths from high-level requests instead of exposing raw system control first.</p></article>
+          <article class="hud-card"><strong>03</strong><h3>Fail safe, not fail open</h3><p>When unsure, pause, ask, log, and protect the user instead of guessing through a risky action.</p></article>
+          <article class="hud-card"><strong>04</strong><h3>Privacy first</h3><p>Microphone, camera, location, transcripts, files, and memories should all have clear controls.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Walker OS FAQ</span>
+      <span>Honest status, strong boundaries, user-friendly language.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
