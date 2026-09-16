@@ -27,7 +27,7 @@
         <a class="is-current" href="./hardware.html">Hardware</a>
         <a href="./faq.html">FAQ</a>
       </nav>
-      <a class="header-action" href="./download.html#early-access">Early access</a>
+      <a class="header-action" href="./index.html#contact">Contact</a>
     </header>
 
     <main id="main">
@@ -39,15 +39,19 @@
             Walker OS should begin as a Raspberry Pi hub, then monitor desktops, laptops, servers,
             storage, phones, tablets, IoT, Bluetooth devices, and future wearables through secure connections.
           </p>
-          <div class="page-kicker">
+        <div class="page-kicker">
             <span class="pill amber">Raspberry Pi first</span>
             <span class="pill">Tailscale mesh</span>
+            <span class="pill">Orange / RK candidates</span>
             <span class="pill">Cloud backup</span>
             <span class="pill">Device inventory</span>
           </div>
         </div>
-        <div class="diagram-card">
-          <img src="./assets/walker-os-stack.svg" alt="Walker OS stack diagram showing device, voice, mobility, AR, and app layers">
+        <div class="diagram-card hardware-page-visual">
+          <picture>
+            <source srcset="./assets/walker-hardware-linux-desktop-transparent.webp" type="image/webp">
+            <img src="./assets/walker-hardware-linux-desktop-transparent.png" alt="Same-footprint SBC boards beside a laptop running Linux-style Walker OS software">
+          </picture>
         </div>
       </section>
 
@@ -66,6 +70,11 @@
             <span role="cell">Raspberry Pi Zero 2 W</span>
             <span role="cell">Small always-on Walker hub</span>
             <span role="cell">First image target from prior build plan</span>
+          </div>
+          <div role="row" class="table-row">
+            <span role="cell">Pi Zero-style SBC alternatives</span>
+            <span role="cell">Same compact footprint, more RAM when available</span>
+            <span role="cell">Orange Pi Zero-class and RK-class candidates for testing</span>
           </div>
           <div role="row" class="table-row">
             <span role="cell">Raspberry Pi 5</span>
@@ -215,9 +224,15 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>Walker OS hardware plan</span>
-      <span>Pi first, broader device mesh later.</span>
+    <footer class="site-footer" id="contact">
+      <div>
+        <span>Walker OS hardware plan</span>
+        <span>Pi first, compact SBC alternatives next, broader device mesh later.</span>
+      </div>
+      <address>
+        Contact:
+        <a href="mailto:replace-with-real-address@example.com">replace-with-real-address@example.com</a>
+      </address>
     </footer>
 
     <script src="./script.js"></script>

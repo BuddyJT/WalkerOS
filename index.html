@@ -27,7 +27,7 @@
         <a href="./hardware.html">Hardware</a>
         <a href="./faq.html">FAQ</a>
       </nav>
-      <a class="header-action" href="./download.html#early-access">Early access</a>
+      <a class="header-action" href="#contact">Contact</a>
     </header>
 
     <main id="main">
@@ -51,36 +51,72 @@
           </div>
         </div>
 
-        <div class="console" aria-label="Walker OS command center preview">
-          <div class="console-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-            <strong>walker@control-center</strong>
+        <div class="hardware-hero" aria-label="Walker OS hardware targets running Linux-style Walker software">
+          <picture data-float-layer="0.018">
+            <source srcset="./assets/walker-hardware-linux-desktop-transparent.webp" type="image/webp">
+            <img src="./assets/walker-hardware-linux-desktop-transparent.png" alt="Three same-footprint single-board computers beside a laptop running a Linux-style Walker OS desktop">
+          </picture>
+          <div class="hardware-tags" aria-label="Hardware target labels">
+            <span class="hardware-tag">Pi Zero 2 W image target</span>
+            <span class="hardware-tag">Orange / RK-class alternatives</span>
+            <span class="hardware-tag">Full build for PCs and laptops</span>
           </div>
-          <div class="console-grid">
-            <div class="status-panel status-live">
-              <span class="status-label">Core</span>
-              <strong>Understands. Plans. Executes. Remembers.</strong>
-              <p>Walker interprets natural language, decides which tools to use, takes action, and records context locally.</p>
+        </div>
+      </section>
+
+      <section class="section ai-runtime-showcase" aria-labelledby="ai-runtime-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">AI runtime</p>
+          <h2 id="ai-runtime-title">Bring your preferred AI key. Keep Ollama ready as backup.</h2>
+          <p>
+            Walker OS is planned around a provider-flexible brain: use a primary API model such as OpenAI,
+            Gemini, or another compatible service when keys are available, then fall back to Ollama for local
+            models, privacy mode, outages, or low-cost offline operation.
+          </p>
+        </div>
+        <div class="runtime-grid">
+          <article class="model-stack" aria-label="Planned model routing">
+            <div class="runtime-row primary-route">
+              <span class="runtime-badge">Primary</span>
+              <div>
+                <h3>API-key models</h3>
+                <p>OpenAI, Gemini, OpenRouter-compatible services, or another provider the owner chooses.</p>
+              </div>
             </div>
-            <div class="status-panel">
-              <span class="status-label">Devices</span>
-              <strong>Tailscale / LAN mesh</strong>
-              <p>Desktop, laptop, server, Pi cluster, NAS, router, phone, tablet, and IoT monitoring through secure links.</p>
+            <div class="runtime-row">
+              <span class="runtime-badge local-route">Backup</span>
+              <div>
+                <h3>Ollama local fallback</h3>
+                <p>Run a local model on the Pi, mini PC, desktop, or a stronger LAN machine when cloud access is not ideal.</p>
+              </div>
             </div>
-            <div class="status-panel">
-              <span class="status-label">Input</span>
-              <strong>Voice, text, terminal, and future glasses</strong>
-              <p>Wake word, typed commands, web UI, CLI, mobile, and AR feedback are planned as interface layers.</p>
+            <div class="runtime-row">
+              <span class="runtime-badge voice-route">Voice</span>
+              <div>
+                <h3>Flexible TTS and STT</h3>
+                <p>Start with offline/free voices such as Piper TTS, then optionally add ElevenLabs, MiniMax, or other voice APIs.</p>
+              </div>
             </div>
-            <div class="terminal-panel">
-              <code>$ walker ask "what devices are online?"</code>
-              <code>desktop: online | server: online | laptop: offline | pi cluster: degraded</code>
-              <code>$ walker save project_report.pdf --to nextcloud</code>
-              <code>confirm? key-auth enabled / transfer encrypted / backup logged</code>
+          </article>
+
+          <article class="voice-demo-card" aria-label="Walker voice preview">
+            <div class="voice-orb" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-          </div>
+            <div>
+              <p class="eyebrow">Walker voice preview</p>
+              <h3>Hear the assistant tone.</h3>
+              <p>
+                This slot is ready for a public voice sample later. The upload-ready draft keeps the audio file
+                out of the repo so it cannot be downloaded from GitHub Pages.
+              </p>
+            </div>
+            <button class="button button-secondary locked-voice-button" type="button" disabled>
+              Voice preview locked
+            </button>
+          </article>
         </div>
       </section>
 
@@ -175,8 +211,8 @@
           </article>
           <article class="feature-card">
             <span class="feature-number">Release ready</span>
-            <h3>Signed downloads later</h3>
-            <p>Ship image files through GitHub Releases or a paid delivery provider with checksums, changelogs, and recovery docs.</p>
+            <h3>Verified downloads later</h3>
+            <p>Ship image files through GitHub Releases with checksums, changelogs, setup docs, and recovery notes.</p>
           </article>
         </div>
       </section>
@@ -251,31 +287,17 @@
         </div>
       </section>
 
-      <section id="early-access" class="section signup-section">
-        <div class="signup-panel">
-          <div>
-            <p class="eyebrow">Early access</p>
-            <h2>Track the first Walker OS build.</h2>
-            <p>
-              This is still a draft site. The form is a placeholder for a mailing list or founder program once the
-              downloadable image, checksums, and setup docs are ready.
-            </p>
-          </div>
-          <form class="signup-form" id="signupForm">
-            <label for="email">Email</label>
-            <div class="form-row">
-              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
-              <button class="button button-primary" type="submit">Request access</button>
-            </div>
-            <p class="form-status" id="formStatus" role="status"></p>
-          </form>
-        </div>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <span>Walker OS draft site</span>
-      <span>Open-source-friendly concept for review, not production checkout.</span>
+    <footer class="site-footer" id="contact">
+      <div>
+        <span>Walker OS draft site</span>
+        <span>Future open-source image and docs. Public downloads are not available yet.</span>
+      </div>
+      <address>
+        Contact:
+        <a href="mailto:replace-with-real-address@example.com">replace-with-real-address@example.com</a>
+      </address>
     </footer>
 
     <script src="./script.js"></script>

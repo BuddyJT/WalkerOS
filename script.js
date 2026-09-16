@@ -62,9 +62,7 @@ const roadmapStage = document.querySelector("#roadmapStage");
 const roadmapTitle = document.querySelector("#roadmapTitle");
 const roadmapText = document.querySelector("#roadmapText");
 const roadmapList = document.querySelector("#roadmapList");
-const checkoutStatus = document.querySelector("#checkoutStatus");
-const signupForm = document.querySelector("#signupForm");
-const formStatus = document.querySelector("#formStatus");
+const floatingHardware = document.querySelectorAll("[data-float-layer]");
 
 function renderRoadmap(tabName) {
   const tab = roadmap[tabName];
@@ -94,21 +92,31 @@ tabButtons.forEach((button) => {
   });
 });
 
-document.querySelectorAll(".js-checkout").forEach((button) => {
-  button.addEventListener("click", () => {
-    if (checkoutStatus) {
-      checkoutStatus.textContent =
-        "Checkout is intentionally mocked in this draft. The next step is wiring a payment provider and signed download delivery.";
-    }
-  });
-});
+if (floatingHardware.length > 0) {
+  let ticking = false;
 
-if (signupForm && formStatus) {
-  signupForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(signupForm);
-    const email = formData.get("email");
-    formStatus.textContent = `Thanks. ${email} is queued for the early-access flow once a mailing list is connected.`;
-    signupForm.reset();
-  });
+  function updateFloatingHardware() {
+    const scrollOffset = window.scrollY;
+
+    floatingHardware.forEach((item) => {
+      const layer = Number(item.dataset.floatLayer || 0);
+      const distance = Math.min(scrollOffset * layer, 46);
+      item.style.setProperty("--scroll-float", `${distance.toFixed(2)}px`);
+    });
+
+    ticking = false;
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateFloatingHardware);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+
+  updateFloatingHardware();
 }

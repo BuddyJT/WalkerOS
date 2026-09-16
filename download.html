@@ -6,7 +6,7 @@
     <title>Download Walker OS | Image and Release Plan</title>
     <meta
       name="description"
-      content="Walker OS download plan for an open-source-friendly Raspberry Pi image with build scripts, checksums, release checklist, and optional paid convenience bundles."
+      content="Walker OS download plan for an open-source-friendly Raspberry Pi image with build scripts, checksums, release checklist, and future GitHub Releases."
     >
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="stylesheet" href="./styles.css">
@@ -27,26 +27,27 @@
         <a href="./hardware.html">Hardware</a>
         <a href="./faq.html">FAQ</a>
       </nav>
-      <a class="header-action" href="#early-access">Early access</a>
+      <a class="header-action" href="./index.html#contact">Contact</a>
     </header>
 
     <main id="main">
       <section class="page-hero compact section-band">
         <div>
-          <p class="eyebrow">Digital product draft</p>
-          <h1>Downloadable image, open build path.</h1>
+          <p class="eyebrow">Future release plan</p>
+          <h1>Download page, ready for the first real image.</h1>
           <p class="hero-text">
-            Walker OS can be sold as a convenient signed image while keeping the builder repo,
-            scripts, layer files, and release checklist open for people who want to inspect or build it themselves.
+            Walker OS is not available to download yet. This page explains what the release will include once the
+            Raspberry Pi or Linux image is built, tested, checksummed, and published in the repo.
           </p>
         </div>
         <div class="page-panel">
           <h3>Launch status</h3>
           <p>
-            Draft only. Checkout, signed builds, license delivery, and support channels still need to be wired before launch.
+            Draft only. No public image is active. The first release should appear here
+            only after boot testing and release verification are complete.
           </p>
           <div class="page-kicker">
-            <span class="status-dot warn">Concept pricing</span>
+            <span class="status-dot warn">No download yet</span>
             <span class="status-dot future">Build scripts planned</span>
             <span class="status-dot">Open docs</span>
           </div>
@@ -55,51 +56,50 @@
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Product packages</p>
-          <h2>Sell convenience, support, and early access.</h2>
+          <p class="eyebrow">Release contents</p>
+          <h2>What will be posted when Walker OS is ready.</h2>
           <p>
-            The open-source-friendly path stays visible: people can review the build recipe.
-            Paid tiers can focus on signed downloads, guided setup, updates, and founder access.
+            The repo should stay useful before and after the image exists. Builders can inspect the plan now,
+            and later download a verified image or build it themselves from source.
           </p>
         </div>
         <div class="product-layout">
           <article class="product-card featured">
             <div class="product-topline">
-              <span>Early Builder Image</span>
-              <strong>$39</strong>
+              <span>Future image</span>
+              <strong>Pending</strong>
             </div>
             <h3>Walker OS for Raspberry Pi</h3>
             <p>
-              A flashable image with Walker preconfigured, intended for early testers using Raspberry Pi hardware.
+              A flashable image with Walker preconfigured, intended for early testers using Raspberry Pi-class hardware.
             </p>
             <ul class="check-list">
-              <li>Signed <code>.img</code> download when production-ready</li>
+              <li>Downloadable <code>.img</code> file when production-ready</li>
               <li>SHA-256 checksum and release checklist</li>
               <li>First boot setup for network, audio, SSH, and dashboard</li>
               <li>Open build recipe for transparency</li>
             </ul>
-            <button class="button button-primary js-checkout" type="button">Mock checkout</button>
           </article>
           <article class="product-card">
             <div class="product-topline">
-              <span>Founder Kit</span>
-              <strong>$99</strong>
+              <span>Source path</span>
+              <strong>Open</strong>
             </div>
-            <h3>Profiles, roadmap access, and support</h3>
+            <h3>Build recipe and documentation</h3>
             <p>
-              A higher tier for early adopters who want device profiles, beta modules, and closer feedback access.
+              The source should explain how the image is assembled, what services run, and what hardware profiles are supported.
             </p>
             <ul class="check-list">
-              <li>Pi Zero 2 W, Pi 5, mini PC, and laptop profiles</li>
-              <li>Experimental AR, car telemetry, cloud, and dashboard modules</li>
-              <li>Private changelog and setup notes</li>
-              <li>Founder feedback and feature voting</li>
+              <li>Pi Zero 2 W, Pi 5, RK-class SBC, mini PC, and laptop notes</li>
+              <li>Lite and Full storage behavior</li>
+              <li>Install, flash, backup, and recovery docs</li>
+              <li>Public changelog and issue tracker when the repo is live</li>
             </ul>
-            <button class="button button-secondary js-checkout" type="button">Reserve founder kit</button>
           </article>
         </div>
-        <p class="notice" role="status" id="checkoutStatus">
-          Draft only: connect checkout to Stripe, Gumroad, Lemon Squeezy, or GitHub Releases when the product is ready.
+        <p class="notice" role="status">
+          No builds are downloadable yet. Add release links here only after a boot-tested image, checksum, changelog,
+          and recovery notes are ready.
         </p>
       </section>
 
@@ -211,7 +211,7 @@
           <div class="comparison-row">
             <span>Hardware</span>
             <span>Pi boots, network appears, SSH works, Walker service is active</span>
-            <span>Marks a build as physically tested</span>
+            <span>Marks a release as physically tested</span>
           </div>
           <div class="comparison-row">
             <span>Release</span>
@@ -245,30 +245,17 @@
         </div>
       </section>
 
-      <section id="early-access" class="section signup-section">
-        <div class="signup-panel">
-          <div>
-            <p class="eyebrow">Early access</p>
-            <h2>Get notified when downloads are real.</h2>
-            <p>
-              The current buttons are mockups. This form is ready to connect to a real mailing list or founder checkout later.
-            </p>
-          </div>
-          <form class="signup-form" id="signupForm">
-            <label for="email">Email</label>
-            <div class="form-row">
-              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
-              <button class="button button-primary" type="submit">Request access</button>
-            </div>
-            <p class="form-status" id="formStatus" role="status"></p>
-          </form>
-        </div>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <span>Walker OS download plan</span>
-      <span>Draft product packaging for an open-source-friendly OS image.</span>
+    <footer class="site-footer" id="contact">
+      <div>
+        <span>Walker OS download plan</span>
+        <span>Future image release page. Public downloads are not available yet.</span>
+      </div>
+      <address>
+        Contact:
+        <a href="mailto:replace-with-real-address@example.com">replace-with-real-address@example.com</a>
+      </address>
     </footer>
 
     <script src="./script.js"></script>

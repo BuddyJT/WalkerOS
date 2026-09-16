@@ -1,8 +1,8 @@
 # Walker OS Website Draft
 
-This is a static draft website for Walker OS, a proposed downloadable operating system image with Walker preconfigured for Raspberry Pi OS or a lightweight Linux build.
+This is a static draft website for Walker OS, a proposed downloadable operating system image with Walker preconfigured for Raspberry Pi OS, a lightweight Linux build, or future PC-class builds.
 
-The copy is intentionally framed as a concept and early-access product, not a finished OS or live checkout.
+The copy is intentionally framed as a project preview and future release page, not a finished OS, public download, or sales site.
 
 The visual direction is a polished corporate Jarvis-style HUD: amber/orange energy accents, cyan interface lines, black glass panels, clear product sections, and an open-source-friendly command-center feel.
 
@@ -11,11 +11,15 @@ The visual direction is a polished corporate Jarvis-style HUD: amber/orange ener
 - Multi-page product site in `dist/`
 - Home, System, Download, Roadmap, Hardware, and FAQ pages
 - Custom Walker OS penguin logo, matching favicon, transparent WOS logo export, and a logo assets page
-- Digital download and founder-kit pricing mockups
+- Future download and release-readiness pages without commerce controls
 - Walker OS Lite and Walker OS Full product-positioning sections
+- Floating hardware hero artwork with Pi Zero-style boards, Orange/RK-style alternatives, and a laptop running Linux-style Walker OS software
+- Start-page AI runtime section covering API-key primary models such as OpenAI or Gemini, plus Ollama local fallback
+- Locked Walker voice preview slot with no public audio file included
+- Voice roadmap copy covering offline/free Piper TTS plus optional API voice providers such as ElevenLabs or MiniMax
 - Detailed system blueprint based on the Walker OS diagrams and the prior Walker Pi image planning task
 - Future roadmap for cars, AR glasses, text-to-speech, speech-to-text, devices, cloud, finance, mobile, and developer modules
-- Static JavaScript for roadmap tabs, mocked checkout messaging, and an early-access form placeholder
+- Static JavaScript for roadmap tabs and scroll-floating hardware motion
 - GitHub Pages workflow that publishes the `dist/` folder
 - Sites-compatible `.openai/hosting.json` with `dist` as the static directory
 - MIT license placeholder for an open-source-friendly repo
@@ -47,8 +51,8 @@ After pushing this repository to GitHub:
 
 - Choose the first real OS base: Raspberry Pi OS, Linux Lite, or another lightweight Linux distribution.
 - Decide exact Lite vs Full storage rules: local-only, personal cloud, business cloud, and hybrid sync behavior.
-- Decide what part of Walker OS is fully open source and what paid convenience bundles include.
-- Replace mock checkout buttons with Stripe, Gumroad, Lemon Squeezy, or another payment provider.
-- Decide how signed downloads, checksums, license keys, and update channels should work.
+- Decide what part of Walker OS is fully open source and how community contributions should work.
+- Add the real contact address in the footer placeholder.
+- Decide how image downloads, checksums, release notes, and update channels should work.
 - Add real screenshots once Walker OS has a first boot screen, settings page, or console.
 - Keep car integrations read-only until safety, liability, and legal requirements are fully understood.
