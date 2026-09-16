@@ -413,12 +413,19 @@ h3 {
 .hardware-hero picture {
   --scroll-float: 0px;
   --base-float: 0px;
+  display: block;
   width: min(100%, 760px);
+  max-width: 760px;
   animation: hardware-drift 7.5s ease-in-out infinite;
-  filter: drop-shadow(0 34px 60px rgba(0, 0, 0, 0.5));
+  filter:
+    drop-shadow(0 34px 60px rgba(0, 0, 0, 0.5))
+    drop-shadow(0 0 34px rgba(33, 243, 255, 0.14));
 }
 
 .hardware-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -612,21 +619,13 @@ h3 {
   height: 1.25rem;
 }
 
-.voice-demo-card audio,
-.locked-voice-button {
+.voice-demo-card audio {
   position: relative;
   z-index: 1;
   width: 100%;
   border: 1px solid rgba(33, 243, 255, 0.28);
   border-radius: 999px;
   background: rgba(1, 8, 14, 0.9);
-}
-
-.locked-voice-button:disabled {
-  cursor: not-allowed;
-  border-color: rgba(255, 157, 35, 0.36);
-  color: #ffd79b;
-  opacity: 1;
 }
 
 .console {

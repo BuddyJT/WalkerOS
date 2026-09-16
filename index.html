@@ -53,8 +53,7 @@
 
         <div class="hardware-hero" aria-label="Walker OS hardware targets running Linux-style Walker software">
           <picture data-float-layer="0.018">
-            <source srcset="./assets/walker-hardware-linux-desktop-transparent.webp" type="image/webp">
-            <img src="./assets/walker-hardware-linux-desktop-transparent.png" alt="Three same-footprint single-board computers beside a laptop running a Linux-style Walker OS desktop">
+            <img class="hardware-photo" src="./assets/walker-hardware-linux-desktop-transparent.png" alt="Three same-footprint single-board computers beside a laptop running a Linux-style Walker OS desktop">
           </picture>
           <div class="hardware-tags" aria-label="Hardware target labels">
             <span class="hardware-tag">Pi Zero 2 W image target</span>
@@ -109,13 +108,11 @@
               <p class="eyebrow">Walker voice preview</p>
               <h3>Hear the assistant tone.</h3>
               <p>
-                This slot is ready for a public voice sample later. The upload-ready draft keeps the audio file
-                out of the repo so it cannot be downloaded from GitHub Pages.
+                This sample is a placeholder voice for the draft site. The final build can switch between
+                free local voices and premium API voices based on the user's setup.
               </p>
             </div>
-            <button class="button button-secondary locked-voice-button" type="button" disabled>
-              Voice preview locked
-            </button>
+            <audio controls preload="metadata" controlslist="nodownload" src="./assets/walker-voice-sample.mp3"></audio>
           </article>
         </div>
       </section>

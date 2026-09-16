@@ -15,7 +15,7 @@ The visual direction is a polished corporate Jarvis-style HUD: amber/orange ener
 - Walker OS Lite and Walker OS Full product-positioning sections
 - Floating hardware hero artwork with Pi Zero-style boards, Orange/RK-style alternatives, and a laptop running Linux-style Walker OS software
 - Start-page AI runtime section covering API-key primary models such as OpenAI or Gemini, plus Ollama local fallback
-- Locked Walker voice preview slot with no public audio file included
+- Walker voice preview audio sample in `dist/assets/walker-voice-sample.mp3`
 - Voice roadmap copy covering offline/free Piper TTS plus optional API voice providers such as ElevenLabs or MiniMax
 - Detailed system blueprint based on the Walker OS diagrams and the prior Walker Pi image planning task
 - Future roadmap for cars, AR glasses, text-to-speech, speech-to-text, devices, cloud, finance, mobile, and developer modules
