@@ -10,7 +10,7 @@ The visual direction is a polished corporate Jarvis-style HUD: amber/orange ener
 
 - Multi-page product site in `dist/`
 - Home, System, Download, Roadmap, Hardware, and FAQ pages
-- Custom Walker OS penguin logo, matching favicon, and a logo assets page
+- Custom Walker OS penguin logo, matching favicon, transparent WOS logo export, and a logo assets page
 - Digital download and founder-kit pricing mockups
 - Walker OS Lite and Walker OS Full product-positioning sections
 - Detailed system blueprint based on the Walker OS diagrams and the prior Walker Pi image planning task
