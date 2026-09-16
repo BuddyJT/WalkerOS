@@ -63,6 +63,9 @@ const roadmapTitle = document.querySelector("#roadmapTitle");
 const roadmapText = document.querySelector("#roadmapText");
 const roadmapList = document.querySelector("#roadmapList");
 const floatingHardware = document.querySelectorAll("[data-float-layer]");
+const walkerVoiceAudio = document.querySelector("#walkerVoiceAudio");
+const walkerVoiceButton = document.querySelector("#walkerVoiceButton");
+const walkerVoiceStatus = document.querySelector("#walkerVoiceStatus");
 
 function renderRoadmap(tabName) {
   const tab = roadmap[tabName];
@@ -119,4 +122,33 @@ if (floatingHardware.length > 0) {
   );
 
   updateFloatingHardware();
+}
+
+if (walkerVoiceAudio && walkerVoiceButton && walkerVoiceStatus) {
+  walkerVoiceButton.addEventListener("click", async () => {
+    if (walkerVoiceAudio.paused) {
+      try {
+        await walkerVoiceAudio.play();
+        walkerVoiceStatus.textContent = "Playing";
+      } catch (error) {
+        walkerVoiceStatus.textContent = "Use controls";
+      }
+      return;
+    }
+
+    walkerVoiceAudio.pause();
+    walkerVoiceStatus.textContent = "Paused";
+  });
+
+  walkerVoiceAudio.addEventListener("play", () => {
+    walkerVoiceStatus.textContent = "Playing";
+  });
+
+  walkerVoiceAudio.addEventListener("pause", () => {
+    walkerVoiceStatus.textContent = "Paused";
+  });
+
+  walkerVoiceAudio.addEventListener("ended", () => {
+    walkerVoiceStatus.textContent = "Ready";
+  });
 }

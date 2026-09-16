@@ -52,9 +52,9 @@
         </div>
 
         <div class="hardware-hero" aria-label="Walker OS hardware targets running Linux-style Walker software">
-          <picture data-float-layer="0.018">
-            <img class="hardware-photo" src="./assets/walker-hardware-linux-desktop-transparent.png" alt="Three same-footprint single-board computers beside a laptop running a Linux-style Walker OS desktop">
-          </picture>
+          <figure class="hardware-showcase">
+            <img class="hardware-photo" src="./assets/walker-hardware-showcase.jpg" alt="Three same-footprint single-board computers beside a laptop running a Linux-style Walker OS desktop">
+          </figure>
           <div class="hardware-tags" aria-label="Hardware target labels">
             <span class="hardware-tag">Pi Zero 2 W image target</span>
             <span class="hardware-tag">Orange / RK-class alternatives</span>
@@ -112,7 +112,13 @@
                 free local voices and premium API voices based on the user's setup.
               </p>
             </div>
-            <audio controls preload="metadata" controlslist="nodownload" src="./assets/walker-voice-sample.mp3"></audio>
+            <button class="voice-play-button" id="walkerVoiceButton" type="button" aria-controls="walkerVoiceAudio">
+              <span>Play Walker voice</span>
+              <small id="walkerVoiceStatus">Ready</small>
+            </button>
+            <audio id="walkerVoiceAudio" controls preload="auto" controlslist="nodownload">
+              <source src="./assets/walker-preview-voice-clean.mp3" type="audio/mpeg">
+            </audio>
           </article>
         </div>
       </section>
